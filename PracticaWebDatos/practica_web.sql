@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 03:19:34
+-- Tiempo de generación: 08-11-2022 a las 01:21:55
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -30,11 +30,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(40) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `sexo` varchar(50) NOT NULL,
   `edad` int(11) NOT NULL,
-  `sexo` tinyint(1) NOT NULL,
-  `huespedes` tinyint(1) NOT NULL,
-  `aditamentos` varchar(200) NOT NULL,
+  `aditamentos` varchar(50) NOT NULL,
+  `huespedes` int(11) NOT NULL,
   `fecha_reserva` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -42,8 +42,8 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre`, `edad`, `sexo`, `huespedes`, `aditamentos`, `fecha_reserva`) VALUES
-(1, 'kakdas', 21, 1, 'ddasasd', '2022-10-03');
+INSERT INTO `usuarios` (`id`, `nombre`, `sexo`, `edad`, `aditamentos`, `huespedes`, `fecha_reserva`) VALUES
+(1, 'Manuel', '1', 23, 'Camas extra', 2, '2022-11-17');
 
 --
 -- Índices para tablas volcadas
